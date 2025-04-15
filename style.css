@@ -11,8 +11,12 @@
   width: 150px;
   height: auto;
 }
+.nav:hover{
+  background: #B9FF66;
+  color: #000 !important;
+}
 .nav-link:hover{
-  color: #B9FF66;
+  color: #B9FF66 !important;
 }
 .services{
   padding: 5px 12px;
@@ -40,6 +44,7 @@
 .swiper-pagination-bullet:hover {
   background: #B9FF66 !important;
 }
+
 .message-pointer {
   position: absolute;
   width: 20px;
