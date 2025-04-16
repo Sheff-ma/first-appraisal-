@@ -30,13 +30,18 @@
   color: #B9FF66;
   background: #000;
 }
-
+.swiper-pagination{
+  position: absolute !important; 
+  bottom: -5px !important;
+}
 .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
-  color: #ffffff !important;
+  background: #000 !important;
   opacity: 1 !important;
   transition: all 0.3s ease !important;
+  margin-top: -60px !important;
+  
 }
 .swiper-pagination-bullet-active {
   background: #B9FF66 !important; 
