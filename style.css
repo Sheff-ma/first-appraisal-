@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* the nav section  */
 .btn{
   padding: 10px 15px;
   border: 1px solid #000;
@@ -18,18 +20,86 @@
 .nav-link:hover{
   color: #B9FF66 !important;
 }
+
+/* the heading for every section */
 .services{
   padding: 5px 12px;
   background: #B9FF66;
   border-radius: 10px;
 }
+
+/* card-text */
+.text-1 {
+  font-weight: 600;
+  color: #000;
+  transition: color 0.3s ease;
+}
+.text-card, .card-link, .card-link i, .card-img {
+  transition: all 0.3s ease;
+}
+
+/* card-1 custom and hover */
+.card, 
+.accordion-item {
+  box-shadow: 0 12px 5px -5px rgba(0, 0, 0, 0.822);
+}
+.card-1:hover {
+  background: #B9FF66 !important;
+  transition: all 0.3s ease !important;
+}
+.card-1:hover .text-1,
+.card-1:hover .link-hover,
+.card-1:hover .link-hover i {
+  color: white !important;
+}
+.card-1:hover .text-card {
+  color: white !important;
+}
+
+/* card-2 custom and hover */
+.card-2 {
+  transition: all 0.3s ease;
+}
+.card-2:hover {
+  background: #000 !important;
+}
+.card-2:hover .text-card,
+.card-2:hover .card-link,
+.card-2:hover .card-link i {
+  color: #fff !important;
+}
+
+/* card-3 custom and hover */
+.card-3 {
+  transition: all 0.3s ease;
+}
+.card-3:hover {
+  background: #f3f3f3 !important;
+}
+.card-3:hover .text-card,
+.card-3:hover .card-link{
+  color: #000 !important;
+}
+.card-3:hover .card-link i{
+  color: #fff !important;
+}
+.card-3:hover .card-img {
+  filter: none !important;
+}
+
+/* upper right arrow icon */
 .bi{
   border: 0 solid #000;
   padding: 10px;
   border-radius: 50%;
   color: #B9FF66;
-  background: #000;
+  background: #191A23;
 }
+
+input{
+  color: #B9FF66;
+}
+/* swiper */
 .swiper-pagination{
   position: absolute !important; 
   bottom: -5px !important;
@@ -41,7 +111,6 @@
   opacity: 1 !important;
   transition: all 0.3s ease !important;
   margin-top: -60px !important;
-  
 }
 .swiper-pagination-bullet-active {
   background: #B9FF66 !important; 
@@ -50,15 +119,66 @@
   background: #B9FF66 !important;
 }
 
+/* message pointer in testimonial */
 .message-pointer {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #000;
+  background: #191A23;
   border-right: 1px solid #B9FF66;
   border-bottom: 1px solid #B9FF66;
   transform: rotate(45deg);
   bottom: -10px;
   left: 30px;
   z-index: 1;
+}
+
+/* input-radio */
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+input[type="radio"]:checked {
+  border-color: none;
+}
+input[type="radio"]:checked::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card-content{
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  background: #fff;
+  bottom: 0px;
+  left: -10px;
+  z-index: 1;
+}
+.card-content2{
+  position: absolute;
+  width: 20px;
+  height: 50px;
+  background: #fff;
+  bottom: 0px;
+  right: -10px;
+  z-index: 2;
 }
