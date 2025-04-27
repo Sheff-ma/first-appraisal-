@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Positivus-use-cases</title>
 </head>
 <body>
@@ -44,28 +45,22 @@
   </nav>
   
     <!-- the first-body-section -->
-  <div class="container bg-body-tertiary rounded-4 py-5 my-5" id="home">
+  <div class="container section-1 bg-body-tertiary rounded-4 py-5 my-5" id="home">
     <div class="row align-items-center g-4 g-lg-5">
       <div class="col-12 col-lg-6 order-2 order-lg-1">
         <img src="imgs/Homepage/Illustration.png" alt="Business illustration" class="img-fluid w-100" style="max-height: 500px; object-fit: contain;">
       </div>
       
-      <div class="col-12 col-lg-6 order-1 order-lg-2 px-3 px-md-5">
+      <div class="section-1 col-12 col-lg-6 order-1 order-lg-2 px-3 px-md-5">
         <h1 class="display-5 fw-bold text-dark">Proven Success <br> Stories</h1>
-        <p class="text-dark py-3">
-          See hoe our innovative digital marketing 
-          strategies have transformed businesses.
-          Whether through SEO, PPC , and social media, order-web design, these use cases highlight the
-          tangible impact of our work. Explore the 
-          successes and envision what we can achieve 
-          together.
+        <p class="text-dark py-3 auto-type">
         </p>
       </div>
     </div>
   </div>
 
   <!-- first-card section -->
-  <div class="container rounded-4 py-5 my-5" id="home" style="background: #191A23;">
+  <div class="sec-01 container rounded-4 py-5 my-5" id="home" style="background: #191A23;">
     <div class="row">
       <div class="col-12 col-lg-6 order-1 order-lg-1">
         <div class="d-flex flex-column align-items-lg-start align-items-center text-center text-lg-start gap-4 my-5 mx-lg-5 mx-3">
@@ -84,30 +79,37 @@
           </a>
         </div>
       </div>
-      <div class="col-12 col-lg-6 order-2 order-lg-2">
+      <div class="section-1 col-12 col-lg-6 order-2 order-lg-2">
         <div class="boxes p-lg-5 p-3">
           <div class="row g-3">
+            <!-- Card 1 -->
             <div class="col-12 col-sm-6">
               <div class="card h-100 text-center p-3 fw-bold">
-                <p class="display-6">200%</p>
+                <p class="display-6 counter-value"><span data-count="200">0</span>%</p>
                 <p>increase in organic traffic</p>
               </div>
             </div>
+            
+            <!-- Card 2 -->
             <div class="col-12 col-sm-6">
               <div class="card h-100 text-center p-3 fw-bold">
-                <p class="display-6">150%</p>
+                <p class="display-6 counter-value"><span data-count="150">0</span>%</p>
                 <p>rise in online sales</p>
               </div>
             </div>
+            
+            <!-- Card 3 -->
             <div class="col-12 col-sm-6">
               <div class="card h-100 text-center p-3 fw-bold">
-                <p class="display-6">75%</p>
+                <p class="display-6 counter-value"><span data-count="75">0</span>%</p>
                 <p>reduction in cost-per-click (CPC)</p>
               </div>
             </div>
+            
+            <!-- Card 4 -->
             <div class="col-12 col-sm-6">
               <div class="card h-100 text-center p-3 fw-bold">
-                <p class="display-6">300%</p>
+                <p class="display-6 counter-value"><span data-count="300">0</span>%</p>
                 <p>improvement in conversion rate</p>
               </div>
             </div>
@@ -119,7 +121,7 @@
 
   <!-- the second section -->
   <div class="container my-4">
-    <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start gap-4 my-5">
+    <div class="section-1 d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start gap-4 my-5">
         <h3 class="services m-0">All Success Stories</h3>
         <p class="m-0">
           Explore real life examples of our proven digital marketing<br class="d-none d-sm-block">
@@ -129,7 +131,7 @@
 
     <div class="container align-items-center justify-content-center p-5" style="border: 1px solid #191A23; border-radius: 30px; box-shadow: 0 12px 5px -5px rgba(0, 0, 0, 0.822);">
       <!-- first row -->
-      <div class="container-1 d-flex flex-lg-row flex-column gap-3 align-items-center justify-content-center">
+      <div class="row-one container-1 d-flex flex-lg-row flex-column gap-3 align-items-center justify-content-center">
         <div class="card" style="width: 18rem; background: #f3f3f3;color: #000; box-shadow: none;">
           <div class="card-body">
             <p class="card-text">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
@@ -158,7 +160,7 @@
         </div>
       </div>
       <!-- second row -->
-      <div class="container-1 d-flex flex-lg-row flex-column gap-3 align-items-center justify-content-center my-3">
+      <div class="row-one container-1 d-flex flex-lg-row flex-column gap-3 align-items-center justify-content-center my-3">
         <div class="card" style="width: 18rem; background: #f3f3f3;color: #000; box-shadow: none;">
           <div class="card-body">
             <p class="card-text">For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
@@ -191,7 +193,7 @@
 
   <!-- the third section/testimonial -->
   <div class="container">
-    <div class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start  my-5">
+    <div class="section-1 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start  my-5">
       <div class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start gap-4 my-5">
         <h3 class="services m-0">Testimonials</h3>
         <p class="m-0">
@@ -200,7 +202,7 @@
         </p>
     </div>
     <!-- testimonial swiper -->
-    <div class="container">
+    <div class="container sec-01">
       <div class="swiper" style="background: #191A23;padding: 20px 0; border-radius: 20px;">
         <ul class="swiper-wrapper" style="padding-left: 2px;">
           <li class="swiper-slide d-flex flex-column align-items-center" style="">
@@ -280,14 +282,12 @@
   </div>
 
    <!-- the fourth section -->
-   <div class="container my-5">
+  <div class="container sec-01 my-5">
     <div class="row g-0 align-items-center" style="border: none; border-radius: 20px; background: #B9FF66; position: relative; overflow: hidden; box-shadow: 0 12px 5px -5px rgba(0, 0, 0, 0.822);">
       <div class="col-12 col-md-6 p-5">
-        <h3 class="fw-bold text-dark fs-3">Let Create Your Next Success Story</h3>
-          <p class="text-dark py-3">
-            Contact us today to learn more about our digital <br>
-            marketing services can make your businesses grow and <br>
-            succeed online.
+        <h3 class="fw-bold text-dark fs-3 auto-type-three"></h3>
+          <p class="text-dark py-3 auto-type-two">
+            
           </p>
           <a href="#" class="px-5 py-3 btn btn-dark">Get your free proposal </a>
       </div>
@@ -304,12 +304,12 @@
   <div class="footer py-3 m-4 rounded-5" style="background: #191A23; color: #f3f3f3;">
     <div class="container rounded-4 p-3 p-md-4">
       <div class="row align-items-center mb-4 text-center text-md-start">
-        <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <div class="col-12 col-md-6 mb-4 mb-md-0 row-one">
           <a class="navbar-brand d-inline-block" href="index.html"> 
             <img src="imgs/Homepage/logo-white.png" alt="logo" style="height: 40px;">
           </a>
         </div>
-        <div class="col-12 col-md-6 text-center text-md-end">
+        <div class="col-12 col-md-6 text-center text-md-end row-one">
           <div class="d-flex justify-content-center justify-content-md-end gap-3">
             <a href="#" class="text-light fs-5"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#" class="text-light fs-5"><i class="fa-brands fa-facebook"></i></a>
@@ -318,7 +318,7 @@
         </div>
       </div>
   
-      <div class="row mb-4">
+      <div class="row mb-4 row-one">
         <div class="col-12">
           <div class="d-flex flex-wrap justify-content-center gap-3 text-center">
             <a class="text-light text-decoration-none px-2" href="about.html">About Us</a>
@@ -331,7 +331,7 @@
       </div>
   
       <!-- Contact and Subscribe -->
-      <div class="row g-4 justify-content-center">
+      <div class="row g-4 justify-content-center row-one">
         <div class="col-12 col-lg-6 text-center text-lg-start">
           <div class="p-3 p-md-4">
             <h6 class="d-inline-block mb-1" style="background: #B9FF66; color: #000; padding: 10px; border-radius: 10px;">Contact Us</h6>
@@ -345,7 +345,7 @@
         </div>
   
         <!-- Subscribe Form -->
-        <div class="col-12 col-lg-6 text-center">
+        <div class="col-12 col-lg-6 text-center row-one">
           <div class="p-3 p-md-4" style="background: #222222; border-radius: 8px;">
             <div class="row g-2 justify-content-center">
               <div class="col-12 col-md-8">
@@ -362,7 +362,7 @@
       <hr class="my-4 mx-auto" style="border-color: #f3f3f3; opacity: 1; max-width: 800px;">
   
       <!-- Copyright -->
-      <div class="row">
+      <div class="row row-one">
         <div class="col-12">
           <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center gap-2 text-center" style="font-size: 12px;">
             <p class="mb-0">© <span id="year"></span> Positivus. All Rights Reserved.</p>
@@ -372,6 +372,99 @@
       </div>
     </div>
   </div>
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- typing animation -->
+  <script>
+    // First auto-typing
+    var typed = new Typed(".auto-type", {
+      strings: ["See hoe our innovative digital marketing  strategies have transformed businesses. Whether through SEO, PPC , and social media, order-web design, these use cases highlight the tangible impact of our work. Explore the  successes and envision what we can achieve  together."],
+      typeSpeed: 10,
+      backSpeed: 0,
+      loop: false,
+      showCursor: false
+    });
+
+    // Second auto-typing
+    var typed = new Typed(".auto-type-two", {
+      strings: ["Contact us today to learn more about our digital marketing services can make your businesses grow and succeed online."],
+      typeSpeed: 100,
+      backSpeed: 0,
+      loop: false,
+      startDelay: 3500,
+      showCursor: false
+    });
+  
+    // Third auto-typing
+    var typedJoin = new Typed(".auto-type-three", {
+      strings: ["Let Create Your Next Success Story"],
+      typeSpeed: 100,
+      backSpeed: 0,
+      loop: false,
+      startDelay: 3000,
+      showCursor: false
+    });
+  </script>
+
+  <!-- counter animation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const counterElements = document.querySelectorAll('.counter-value [data-count]');
+      let animationTriggered = false;
+      
+      function animateCounters() {
+        if (animationTriggered) return;
+        
+        const container = document.querySelector('.boxes');
+        const containerPosition = container.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+        
+        if (containerPosition < screenPosition) {
+          animationTriggered = true;
+          
+          counterElements.forEach(counter => {
+            const target = +counter.getAttribute('data-count');
+            const duration = 5000; // 2 seconds
+            const stepTime = 80; // ms between updates
+            const steps = duration / stepTime;
+            const increment = target / steps;
+            let current = 0;
+            
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                clearInterval(timer);
+                current = target;
+              }
+              counter.textContent = Math.floor(current);
+            }, stepTime);
+          });
+        }
+      }
+      
+      // Run on load and scroll
+      window.addEventListener('load', animateCounters);
+      window.addEventListener('scroll', animateCounters);
+    });
+  </script>
+
+  <!-- scroll reveal -->
+  <script>
+      ScrollReveal({ 
+          // reset: true//
+          distance: '60px',
+          duration: 2500,
+          delay: 400
+      });
+
+      ScrollReveal().reveal('.section-1, .section-2',{ delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.footer',{ delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.sec-01',{ delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.row-one',{ delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.media-info',{ delay: 500, origin: 'left', interval: 200 });
+
+  </script>
 
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

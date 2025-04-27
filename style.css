@@ -182,6 +182,19 @@ input[type="radio"]:checked::before {
   right: -10px;
   z-index: 2;
 }
+.counter-card {
+  width: 150px;
+  background: transparent;
+  border: none;
+  transition: transform 0.3s;
+}
+.counter-card:hover {
+  transform: translateY(-5px);
+}
+.counter-value {
+  font-weight: 500;
+  color: #000;
+}
 
 .part4-container{
   display: grid;
